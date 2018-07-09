@@ -147,3 +147,13 @@ div.sfu-coin-h2 {
 div.sfu-coin-h2 h2 {
     color: #555;
 }
+
+.subpage-hamburger {
+    color: black;
+}
+
+@media screen and (max-width: 980px) {
+    a.subpage-link {
+        color: white !important;
+    }
+}
