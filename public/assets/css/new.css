@@ -1,0 +1,149 @@
+.button#home-learn-more {
+    box-shadow: inset 0 0 0 3px white;
+    color: white !important;
+}
+
+.home-page-links {
+    text-decoration: none;      
+}
+
+#socials .icon {
+    color: #a6192f;
+    font-size: 4em;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+h2 {
+    color: white;
+}
+
+#value-props {
+    position: relative;
+    max-width: 75em;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.flexbox.center-row {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flexbox.center-column {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.align-end {
+    align-self: flex-end;
+}
+
+div.value-prop {
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    /* padding: 0 2em 0 2em; */
+    min-height: 70px;
+}
+
+@media screen and (max-width: 1280px) {
+    div.value-prop {
+        border: none;
+    }
+}
+
+.value-prop.last {
+    border-right: none;
+}
+
+h2.value-prop-header {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0 !important;
+    
+}
+
+@media screen and (min-width: 992px) {
+    #banner {
+        height: 100vh;
+        margin-top: 0;
+    }
+} 
+
+#banner #banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.bottom-border {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#header .inner {
+    min-height: 75px;  
+}
+
+.subpage #header {
+    height: 75px;
+    background-color: #f1f1f1; 
+}
+
+#header .logo {
+    line-height: 0;
+    top: auto;
+}
+
+a.subpage-link {
+    color: black !important;
+}
+
+.about-footer-button {
+    display: block;
+    min-width: 280px;
+}
+
+footer.button-footer {
+    display: inline-block;
+    margin: 15px;   
+}
+
+@media screen and (max-width: 700px) {
+ 
+    div#foot-button-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+div#foot-button-container {
+    height: 100px;
+}
+
+div.sfu-coin-h2 {
+    align-self: start;
+}
+
+div.sfu-coin-h2 h2 {
+    color: #555;
+}

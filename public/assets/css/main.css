@@ -1633,7 +1633,7 @@
 		}
 
 	a {
-		color: #6cc091;
+		color: #a6192f;
 		text-decoration: underline;
 	}
 
@@ -1900,7 +1900,7 @@
 		}
 
 			.flex.flex-2 article {
-				width: 50%;
+				width: 33.3333%;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -1974,10 +1974,10 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: #6cc091;
+		background: #a6192f;
 		border-radius: 10px;
 		border: none;
-		border: solid 2px #8dcca9;
+		border: solid 2px white;
 		color: #fff;
 		display: block;
 		outline: 0;
@@ -2001,8 +2001,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4bae77;
-			box-shadow: 0 0 0 1px #4bae77;
+			border-color: #8b9791;
+			box-shadow: 0 0 0 1px #8b9791;
 		}
 
 	.select-wrapper {
@@ -2090,7 +2090,7 @@
 			input[type="radio"] + label:before {
 				background: rgba(144, 144, 144, 0.075);
 				border-radius: 0;
-				border: solid 1px #8dcca9;
+				border: solid 1px white;
 				content: '';
 				display: inline-block;
 				height: 1.65em;
@@ -2104,16 +2104,16 @@
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #6cc091;
-			border-color: #6cc091;
+			background: #a6192f;
+			border-color: #a6192f;
 			color: #ffffff;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #6cc091;
-			box-shadow: 0 0 0 1px #6cc091;
+			border-color: #a6192f;
+			box-shadow: 0 0 0 1px #a6192f;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2170,7 +2170,7 @@
 		}
 
 		.box.person {
-			border: solid 1px #8dcca9;
+			border: solid 1px white;
 			padding: 3em 1.5em;
 		}
 
@@ -2526,8 +2526,8 @@
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
-		box-shadow: inset 0 0 0 3px #6cc091;
-		color: #6cc091 !important;
+		box-shadow: inset 0 0 0 3px #a6192f;
+		color: #8f340a !important;
 		border-radius: 30px;
 		border: 0;
 		cursor: pointer;
@@ -2641,7 +2641,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #6cc091;
+			background-color: #a6192f;
 			color: #ffffff !important;
 		}
 
@@ -2697,7 +2697,7 @@
 	}
 
 		.subpage #header {
-			background: #6cc091;
+			background: #a6192f;
 			top: 0;
 			height: 44px;
 			line-height: 44px;
@@ -2838,7 +2838,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		background: #6cc091;
+		background: #a6192f;
 		color: #daefe3;
 		height: 100%;
 		max-width: 80%;
@@ -2857,7 +2857,7 @@
 		}
 
 		#navPanel a:not(.close) {
-			border-top: solid 1px #8dcca9;
+			border-top: solid 1px white;
 			color: #daefe3;
 			font-weight: 600;
 			display: block;
@@ -2917,7 +2917,7 @@
 
 	#banner {
 		padding: 8em 0 9em 0;
-		background-image: url(../../images/banner.jpg);
+		background-image: url(../../images/vancouver.jpg);
 		background-size: cover;
 		background-position: bottom;
 		background-attachment: fixed;
@@ -2928,7 +2928,7 @@
 
 		#banner:before {
 			content: '';
-			background: rgba(75, 75, 93, 0.85);
+			background: rgba(100, 100, 113, 0.85);
 			position: absolute;
 			width: 100%;
 			height: 100%;
@@ -2960,7 +2960,7 @@
 		}
 
 		#banner .icon {
-			color: #6cc091;
+			color: #a6192f;
 			font-size: 2em;
 		}
 
@@ -3036,6 +3036,9 @@
 					padding: 0 3em;
 				}
 
+				#banner h2 {
+					font-size: 1.5em;
+				}
 		}
 
 		@media screen and (max-width: 980px) {
@@ -3062,6 +3065,9 @@
 					padding: 0 1.5em;
 				}
 
+				#banner h2 {
+					font-size: 2em;
+				}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3096,6 +3102,10 @@
 						border: none;
 						margin-bottom: 1em;
 					}
+				
+				#banner h2 {
+					font-size: 1.5em;
+				}
 
 		}
 
@@ -3105,13 +3115,17 @@
 				font-size: 1.5em;
 			}
 
+			#banner h2 {
+				font-size: 1em;
+			}
+
 		}
 
 /* Footer */
 
 	#footer {
 		padding: 6em 0;
-		background: #6cc091;
+		background: #a6192f;
 		color: #fff;
 		text-align: center;
 	}
