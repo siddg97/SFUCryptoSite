@@ -6,6 +6,8 @@ var email = require('./email.js');
 
 var app = express();
 
+const port = process.env.PORT || 3000;
+
 
 // View Engine
 app.set('view engine', 'ejs');
@@ -64,6 +66,6 @@ app.post('/send_contact_us_email', (req, res) => {
     });
 })
 
-app.listen(3000, () => {
-    console.log("Server Started on Port 3000...");
+app.listen(port, () => {
+    console.log(`Server Started on Port ${port}...`);
 });
