@@ -71,6 +71,31 @@ app.post('/send_contact_us_email', async (req, res) => {
     return res.sendFile(__dirname + '/views/confirmreq.html');
 })
 
+app.post('/send_personal_email', async (req, res) => {
+    console.log(req.body);
+
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: `${req.body.name} <${req.body.email}>`, // sender address
+        to: 'vinsonl@sfu.ca', // list of receivers
+        subject: `[Personal Site] ${req.body.subject}`, // Subject line
+        text: req.body.message, // plain text body
+        // html: '<b>Hello world?</b>' // html body
+    };
+    
+    email.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.log(error);
+            res.status(500).send({message:'Failed.'})
+        } else {
+            console.log('Message sent: %s', info.messageId);
+            // Preview only available when sending through an Ethereal account
+            console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+            res.send({message:'Message sent'});
+        }
+    });
+})
+
 app.get('/confirmreq', (req, res) => {
     return res.sendFile(__dirname + '/views/confirmreq.html');
 })
