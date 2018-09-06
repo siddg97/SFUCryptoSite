@@ -71,7 +71,7 @@ app.post('/send_contact_us_email', async (req, res) => {
     return res.sendFile(__dirname + '/views/confirmreq.html');
 })
 
-app.post('/send_personal_email', async (req, res) => {
+app.post('/api/send_personal_email', async (req, res) => {
     console.log(req.body);
 
     // setup email data with unicode symbols
