@@ -52,7 +52,7 @@ app.post('/send_contact_us_email', async (req, res) => {
     // setup email data with unicode symbols
     let mailOptions = {
         from: `${req.body.name} <${req.body.email}>`, // sender address
-        to: 'sfucrypto@gmail.com', // list of receivers
+        to: 'sfublockchain@gmail.com', // list of receivers
         subject: `[${req.body.name}] Club Inquiry`, // Subject line
         text: req.body.message, // plain text body
         // html: '<b>Hello world?</b>' // html body
