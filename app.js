@@ -30,16 +30,17 @@ app.get('/', (req, res) => {
 });
 
 app.get('/register', (req, res) => {
-    res.sendFile(__dirname + '/views/register.html');
+    // res.sendFile(__dirname + '/views/register.html');
+    res.redirect("https://go.sfss.ca/clubs/771/info");
 })
 
 app.get('/about', (req, res) => {
     res.sendFile(__dirname + '/views/about.html');
 })
 
-app.get('/sfu_coin', (req, res) => {
-    res.sendFile(__dirname + '/views/sfucoin.html');
-})
+// app.get('/sfu_coin', (req, res) => {
+//     res.sendFile(__dirname + '/views/sfucoin.html');
+// })
 
 app.get('/confirm_req', (req, res) => {
     res.sendFile(__dirname + '/views/confirmreq.html');
