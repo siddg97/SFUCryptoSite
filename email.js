@@ -32,7 +32,7 @@ let transporter = nodemailer.createTransport({
 // let mailOptions = {
 //     from: '"Fred Foo 👻" <foo@example.com>', // sender address
 //     to: 'vinsonly@live.ca, vinsonl@sfu.ca', // list of receivers
-//     subject: '[Fred Foo] SFU Cryptocurrency Club Inquiry', // Subject line
+//     subject: '[Fred Foo] SFU Blockchain Club Inquiry', // Subject line
 //     text: 'Hello world?', // plain text body
 //     // html: '<b>Hello world?</b>' // html body
 // };
